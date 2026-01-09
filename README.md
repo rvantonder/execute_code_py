@@ -18,6 +18,8 @@ Claude can only run Python code and is forced to write and **execute code** to
 do any real work. This creates a constrained environment ideal for
 deterministic, computational tasks.
 
+[Blog Post](http://rijnard.com/blog/the-code-only-agent.html)
+
 ## Installation
 
 ### From Marketplace (Recommended)

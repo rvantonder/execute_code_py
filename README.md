@@ -61,7 +61,7 @@ You: randomly generate 1000000 numbers between 0 and 100000 and sort them
 
 Claude
 
-```
+```python
 ⏺ code-executor - execute_code (MCP)(code: "...")
   ⎿  PreToolUse:mcp__code-executor__execute_code hook succeeded: Success
   ⎿                                                                                                                                                              
@@ -77,6 +77,7 @@ Claude
      sort_start = time.time()
      sorted_numbers = np.sort(numbers)
      sort_time = time.time() - sort_start
+   ...
 ```
 
 ## Internals and Known Limitations 

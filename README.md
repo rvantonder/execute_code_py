@@ -22,19 +22,18 @@ deterministic, computational tasks.
 
 ## Installation
 
+**Note: This is experimental. It is not production-ready. Use at your own risk.**
+
 ```bash
-# Clone and setup
 git clone https://github.com/rvantonder/execute_code_py.git
+
 cd execute_code_py
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
-# Run Claude Code with this plugin directory
 claude --plugin-dir .
 ```
 
-The `.mcp.json` uses `${CLAUDE_PLUGIN_ROOT}` to reference the plugin directory, ensuring MCP servers load correctly regardless of your current working directory.
-
-Now Claude can ONLY execute Python code!
+Now your Claude session can ONLY execute Python code!
 
 ## Examples
 
@@ -71,10 +70,10 @@ You: Create a bar chat of a binomial distribution in svg
 
 ## Internals and Known Limitations 
 
-This is a concept. Claude Code is not inherently set up to enable what
+Claude Code is not inherently set up to enable what
 Code-Only aspires to. For example:
 
--  calling a custom tool needs to go through an unnecessary MCP abstraction
+- calling a custom tool needs to go through an unnecessary MCP abstraction
 - we have to use PreHook tooling to restrict Claude from calling other tools. 
 
 Native support would provide a much better UX:
@@ -106,6 +105,8 @@ Teaches Claude about:
 - Best practices for computational problem-solving
 
 ## Tool Definitions
+
+See these as tweakable harness parameters.
 
 ### Schema
 

@@ -83,12 +83,18 @@ Claude
 ## Internals and Known Limitations 
 
 This is a concept. Claude Code is not inherently set up to enable what
-Code-Only aspires to. For example, calling a custom tool needs to go through an
-unnecessary MCP abstraction. Also, we have to use PreHook tooling to restrict
-Claude from calling other tools. Native support would provide a much better UX:
-elide parameters that the code is called with (currently this is hardcoded to
-display in Claude Code) and better highlighting. Nevertheless, the concept
-stands!
+Code-Only aspires to. For example:
+
+-  calling a custom tool needs to go through an unnecessary MCP abstraction
+- we have to use PreHook tooling to restrict Claude from calling other tools. 
+
+Native support would provide a much better UX:
+
+- elide parameters that the code is called with (currently this is hardcoded to
+display in Claude Code) and better highlighting. 
+- code execution in the same runtime as the agent (🤩)
+
+Nevertheless, the concept stands!
 
 How it works--
 

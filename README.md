@@ -22,7 +22,7 @@ deterministic, computational tasks.
 
 ## Installation
 
-**Note: This is experimental. It is not production-ready. Use at your own risk.**
+**Note: This is experimental. A demo. It may not work for you. It is not production-ready. Use at your own risk.**
 
 ```bash
 git clone https://github.com/rvantonder/execute_code_py.git

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "code-executor": {
+      "command": ".venv/bin/python3",
+      "args": ["mcp-server/server.py"],
+      "env": {}
+    }
+  }
+}

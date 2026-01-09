@@ -1,0 +1,14 @@
+{
+  "name": "execute-code",
+  "owner": {
+    "name": "Execute Code Python Plugin",
+    "url": "https://github.com/rvantonder/execute_code_py"
+  },
+  "plugins": [
+    {
+      "name": "execute_code_py",
+      "source": "./",
+      "description": "Restricts Claude to ONLY use the execute_code tool - a pure Python code execution environment with all other tools blocked"
+    }
+  ]
+}

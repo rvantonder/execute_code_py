@@ -1,0 +1,18 @@
+[project]
+name = "code-only-plugin"
+version = "1.0.0"
+description = "Claude Code plugin that restricts to execute_code tool only"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=0.1.0",
+]
+
+[project.scripts]
+code-executor-server = "mcp_server.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []

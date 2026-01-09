@@ -1,0 +1,16 @@
+{
+  "description": "Enforce execute_code tool as the ONLY allowed tool",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/enforce-tool.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

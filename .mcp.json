@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "code-executor": {
-      "command": ".venv/bin/python3",
-      "args": ["mcp-server/server.py"],
+      "command": "${CLAUDE_PLUGIN_ROOT}/run-mcp-server.sh",
+      "args": [],
       "env": {}
     }
   }

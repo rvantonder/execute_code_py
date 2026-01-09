@@ -22,36 +22,19 @@ deterministic, computational tasks.
 
 ## Installation
 
-### From Marketplace (Recommended)
-
 ```bash
-# 1. Add the marketplace
-/plugin marketplace add https://github.com/rvantonder/execute_code_py.git
+# Clone and setup
+git clone https://github.com/rvantonder/execute_code_py.git
+cd execute_code_py
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
-# 2. Install the plugin
-/plugin install execute_code_py@execute-code
-
-# 3. Restart Claude Code
+# Run Claude Code with this plugin directory
+claude --plugin-dir .
 ```
+
+The `.mcp.json` uses `${CLAUDE_PLUGIN_ROOT}` to reference the plugin directory, ensuring MCP servers load correctly regardless of your current working directory.
 
 Now Claude can ONLY execute Python code!
-
-### Python Dependencies
-
-The plugin requires:
-- **Python 3.8+**
-- **mcp** package (Model Context Protocol SDK)
-
-The MCP package will be installed automatically when you install the plugin. If you need to install it manually:
-
-```bash
-pip install mcp>=0.1.0
-```
-
-Or using uv (faster):
-```bash
-uv pip install mcp>=0.1.0
-```
 
 ## Examples
 
@@ -79,6 +62,12 @@ Claude
      sort_time = time.time() - sort_start
    ...
 ```
+
+```
+You: Create a bar chat of a binomial distribution in svg
+```
+
+...
 
 ## Internals and Known Limitations 
 
